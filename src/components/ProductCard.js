@@ -1,13 +1,35 @@
 import { Card, Button, Form, Row, Col } from 'react-bootstrap';
 import { CartContext } from '../CartContext';
 import { useContext } from 'react';
+//after install you need these elements for Swiper
+// import { Navigation, EffectFade } from "swiper";
+// import { Swiper, SwiperSlide } from "swiper/react";
+
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/effect-fade"
+//after install you need these elements for Swiper END
 
 function ProductCard({product}) {
+
+
     const cart= useContext(CartContext);
     const productQuantity = cart.getProductQuantity(product.id);
     console.log(cart.items);
 
     return (
+       
+        {/* <Swiper
+        modules={[Navigation, EffectFade]}
+        navigation
+        effect
+        speed={800}
+        slidesPerView={1}
+        loop
+        className
+        > */
+     /* {product.map((prod, i) => (
+         <SwiperSlide> */}
         <Card>
             <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
@@ -31,6 +53,10 @@ function ProductCard({product}) {
                 
             </Card.Body>
         </Card>
+        {/* </SwiperSlide>
+        ))}
+        </Swiper> */}
+       
     )
 }
 
