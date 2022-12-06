@@ -30,4 +30,4 @@ function Store() {
   );
 }
 
-render (<Store/>) ;
+export default Store;
