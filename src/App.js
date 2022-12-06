@@ -8,11 +8,12 @@ import Store from "./pages/Store";
 import Success from "./pages/Success";
 import CartProvider from './CartContext';
 
+
 function App() {
   return (
     <CartProvider>
     <Container>
-      <NavbarComponent></NavbarComponent>
+            <NavbarComponent></NavbarComponent>
       <BrowserRouter>
         <Routes>
           <Route index element={<Store />} />
