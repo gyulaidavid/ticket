@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 export default function Swipermain() {
-  const photos = ["gotmoney.jpg", "elon.jpg", "budget.jpg"];
+  const photos = ["alien.jpg", "mars_choco.jpg", "mars_hotel.jpg", "mars_massage.jpg", "mars_toilet.jpg", "mars_view.jpg" ];
 
   return (
     <>
