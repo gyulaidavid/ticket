@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 import { Navigation, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 
 import "swiper/css";
 //import styles from "./Imageswiper.scss";
@@ -21,19 +20,14 @@ export default function Swipermain() {
           speed={800}
           slidesPerView={1}
           loop
-          
         >
-         
-         {photos.map((photo, i) => (
-            <SwiperSlide >
+          {photos.map((photo, i) => (
+            <SwiperSlide>
               <img src={`pictures/${photo.toString()}`} alt='' />
-              Valami
             </SwiperSlide>
           ))}
-         
         </Swiper>
       </div>
-     
     </>
-  )
+  );
 }
