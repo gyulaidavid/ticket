@@ -7,12 +7,14 @@ import Cancel from "./pages/Cancel";
 import Store from "./pages/Store";
 import Success from "./pages/Success";
 import CartProvider from './CartContext';
+import Swipermain from './components/Swipermain';
 
 function App() {
   return (
     <CartProvider>
     <Container>
       <NavbarComponent></NavbarComponent>
+      <Swipermain/>
       <BrowserRouter>
         <Routes>
           <Route index element={<Store />} />
